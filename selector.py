@@ -793,6 +793,6 @@ def selector(kind_or_kinds_or_qname_or_qnames=None, labels=None,
                     all_namespaces=all_namespaces, static_context=static_context)
 
 
-from .action import oc_action
-from .apiobject import APIObject
-from .context import cur_context
+from action import oc_action
+from apiobject import APIObject
+from context import cur_context
