@@ -4,11 +4,11 @@ import naming
 import model
 import util
 
-from .result import Result
-from .naming import normalize_kinds, normalize_kind, qname_matches
-from .model import *
-from .util import split_names, is_collection_type
-from . import util
+from result import Result
+from naming import normalize_kinds, normalize_kind, qname_matches
+from model import *
+from util import split_names, is_collection_type
+#from  import util
 import json
 import time
 import sys
