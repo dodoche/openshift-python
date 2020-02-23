@@ -11,4 +11,4 @@ ENV PYTHONUNBUFFERED=1
 EXPOSE 8080
 ENTRYPOINT /bin/sh
 #ENTRYPOINT [ "python" ]
-CMD [ "app.py" ]
+CMD [ "python", "app.py" ]
