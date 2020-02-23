@@ -28,4 +28,4 @@ with oc.project('openshift-infra'), oc.timeout(10*60):
         for owner in pod_model.metadata.ownerReferences:  # ownerReferences == oc.Missing if not present in resource
             # elements of a Model are also instances of Model or ListModel
             if owner.kind is not oc.Missing:  # Compare as singleton
-                print '  pod owned by a {}'.format(owner.kind)  # e.g. pod was created by a StatefulSet
+                print(' pod owned by a {}'.format(owner.kind) ) # e.g. pod was created by a StatefulSet
