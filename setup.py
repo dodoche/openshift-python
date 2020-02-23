@@ -1,4 +1,3 @@
-FROM centos:7
 
 RUN yum --enablerepo=extras install -y epel-release && \
     yum install -y git python3 python-pip && \
