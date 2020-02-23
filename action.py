@@ -9,7 +9,7 @@ import datetime
 import traceback
 import util
 
-from .util import TempFile, is_collection_type
+from util import TempFile, is_collection_type
 import six
 
 # Three base64 encoded components, '.' delimited is a token. First, find any such match.
