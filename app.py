@@ -12,7 +12,7 @@ import model
 
 def main():
 
-  configmaps =  oc.selector("configmaps")
+  configmaps =  selector("configmaps")
   Configmaps = configmaps.objects()
   conf = Configmaps[2]
   print('Annotations:\n{}\n'.format(conf.model.metadata))
