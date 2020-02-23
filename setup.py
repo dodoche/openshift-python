@@ -5,6 +5,6 @@ setup(
     version='0.0.1',
     author='doraly',
     url="https://github.com/dodoche/openshift-python.git",
-    packages=find_packages(),
+    packages=find_packages('openshift'),
     description='Python sample application'
 )
