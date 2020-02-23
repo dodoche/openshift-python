@@ -3,7 +3,7 @@ from action import *
 from model import *
 from result import *
 from naming import kind_matches
-from . import util
+import util
 import yaml
 import json
 import sys
@@ -879,5 +879,5 @@ class APIObject:
         return r
 
 
-from .context import cur_context
-from .selector import selector
+from context import cur_context
+from selector import selector
