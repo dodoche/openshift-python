@@ -8,6 +8,7 @@ import argparse
 import time
 import logging
 import traceback
+import selector
 
 def main():
 
