@@ -3,10 +3,11 @@ from datetime import datetime
 from datetime import timedelta
 from threading import local
 import inspect
+import result
 
 import os
 
-from .result import Result
+from result import Result
 
 # All threads will have a context which is
 # managed by a stack of Context objects. As
