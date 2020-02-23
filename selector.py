@@ -1,4 +1,9 @@
 from __future__ import absolute_import
+imoprt result
+import naming
+import model
+import util
+
 from .result import Result
 from .naming import normalize_kinds, normalize_kind, qname_matches
 from .model import *
