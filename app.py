@@ -9,6 +9,7 @@ import time
 import logging
 import traceback
 import selector
+import model
 
 def main():
 
