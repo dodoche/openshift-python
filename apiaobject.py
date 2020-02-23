@@ -1,8 +1,8 @@
 from __future__ import absolute_import
-from .action import *
-from .model import *
-from .result import *
-from .naming import kind_matches
+from action import *
+from model import *
+from result import *
+from naming import kind_matches
 from . import util
 import yaml
 import json
