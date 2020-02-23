@@ -1,18 +1,14 @@
 from __future__ import print_function
 from __future__ import absolute_import
 import openshift as oc
-from contextlib import contextmanager
-import argparse
-import time
-import logging
-import traceback
-
-def main():
-
-  configmaps =  oc.selector("configmaps")
-  Configmaps = configmaps.objects()
-  conf = Configmaps[2]
-  print('Annotations:\n{}\n'.format(conf.model.metadata))
 
 if __name__ == '__main__':
-  main()
+    with oc.tracking() as tracker:
+        try:
+            print('Current project: {}'.format(oc.get_project_name()))
+            print('Current user: {}'.format(oc.whoami()))
+        except:
+            print('Error acquire details about project/user')
+
+        # Print out details about the invocations made within this context.
+        print(tracker.get_result())
