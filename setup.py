@@ -1,10 +1,10 @@
-RUN  pip install paramiko pyyaml prometheus_client boto3 slackclient && \
-    
-mkdir /openshift-client-python
+from setuptools import setup, find_packages
 
-COPY packages /openshift-client-python/packages
-
-ENV PYTHONPATH=/openshift-client-python/packages
-ENV PYTHONUNBUFFERED=1
-
-ENTRYPOINT /bin/sh
+setup(
+    name='sukem',
+    version='0.0.1',
+    author='doraly',
+    url="https://github.com/dodoche/openshift-python.git"
+    packages=find_packages(),
+    description='Python sample application'
+)
