@@ -1,5 +1,5 @@
 from __future__ import absolute_import
-imoprt result
+import result
 import naming
 import model
 import util
