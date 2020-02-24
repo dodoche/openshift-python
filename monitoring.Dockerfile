@@ -10,6 +10,16 @@ COPY packages /openshift-client-python/packages
 
 ENV PYTHONPATH=/openshift-client-python/packages
 ENV PYTHONUNBUFFERED=1
+ENV APP_ENV development
+
+# Exposing Ports
+EXPOSE 5035
+
+# Setting Persistent data
+VOLUME ["/app-data"]
+
+# Running Python Application
+CMD ["python", "app.py"]
 
 ENTRYPOINT /bin/sh
 
