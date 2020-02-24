@@ -12,10 +12,10 @@ import model
 
 def main():
 
-  configmaps =  selector("configmaps")
+  configmaps =  oc.selector("configmaps")
   Configmaps = configmaps.objects()
-  conf = Configmaps[2]
-  print('Annotations:\n{}\n'.format(conf.model.metadata))
+  conf = Configmaps[0]
+  print('Annotations:\n{}\n'.format(conf.model.data))
 
 if __name__ == '__main__':
   main()
